@@ -1,0 +1,38 @@
+.wrapper {
+    padding: 50px 0px 50px 0px;
+    width: 1060px;
+    height: 950px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 4px 5px #858585a6;
+}
+
+ul {
+    list-style: none;
+}
+
+.top_menu {
+    width: 966px;
+    height: 40px;
+    background-color: #4d4c4c;
+    margin: 0 auto;;
+}
+
+.top_menu li{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-left: 1px solid transparent;
+    border-right:1px solid transparent;
+    color: white;
+}
+
+.top_menu li:hover{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.top_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
