@@ -1,38 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .wrapper {
-    padding: 50px 0px 50px 0px;
-    width: 1060px;
-    height: 950px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    max-width: 1060px;
+    min-height: 100vh;
     margin: 0 auto;
-    box-shadow: 0px 0px 4px 5px #858585a6;
+    box-shadow: 0 0 4px 5px #858585a6;
 }
 
 ul {
     list-style: none;
 }
 
-.top_menu {
-    width: 966px;
-    height: 40px;
-    background-color: #4d4c4c;
-    margin: 0 auto;;
+a {
+    text-decoration: none;
 }
 
-.top_menu li{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 14px;
+.logo {
+    display: block;
+}
+
+header nav {
+    background-color: #4d4c4c;
+}
+
+.main-menu {
+    display: flex;
+}
+
+.main-menu li {
+    padding: 0;
     border-left: 1px solid transparent;
-    border-right:1px solid transparent;
+    border-right: 1px solid transparent;
     color: white;
 }
 
-.top_menu li:hover{
+.main-menu li:hover {
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
 
-.top_menu a {
-    text-decoration: none;
+.main-menu--footer li:hover {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.main-menu a {
+    display: block;
+    padding: 12px 20px;
     color: white;
     font-size: 15px;
+}
+
+.content {
+    display: flex;
+    flex: 1 1;
+}
+
+aside {
+    margin-right: 20px;
+}
+
+.aside-menu {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+}
+
+.aside-menu a {
+    display: block;
+    color: black;
+    padding: 10px;
+}
+
+.aside-menu li {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 0;
+}
+
+
+.aside-menu:last-child {
+    border-bottom: 1px solid black;
+}
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8c1c1;
+}
+
+.footer-menu {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.main-menu--footer a {
+    color: #2c2c2c;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
 }
